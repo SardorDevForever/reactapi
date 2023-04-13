@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios";
+import { Route, Routes } from "react-router-dom";
 
 import Coins from './components/Coins';
 import Navbar from './components/Navbar';
+import Coin from './routes/Coin';
 
 function App() {
 
@@ -22,7 +24,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <Coins coins={coins} />
+      <Routes>
+        <Route path='/' element={<Coins coins={coins} />} />
+        <Route path='/coin' element={<Coin />}>
+          <Route path=':coinId' element={<Coin />} />
+        </Route>
+      </Routes>
     </>
   );
 }
