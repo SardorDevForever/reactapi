@@ -61,3 +61,35 @@ th {
     grid-gap: 2rem;
     width: 100%;
 }
+
+.stats .row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #808080;
+    margin: .6rem 0;
+    padding-bottom: .5rem;
+}
+
+.stats .row p:first-child {
+    color: #d3d3d3;
+}
+
+.about h3 {
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 700px) {
+    .coin-container .content {
+        max-width: 100%;
+        margin: .5rem;
+        padding: 0 .5rem;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    td, th {
+        padding: 3px;
+    }
+}

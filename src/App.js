@@ -6,6 +6,8 @@ import Coins from './components/Coins';
 import Navbar from './components/Navbar';
 import Coin from './routes/Coin';
 
+import './index.css'
+
 function App() {
 
   const [coins, setCoins] = useState([])
