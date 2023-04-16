@@ -5,7 +5,7 @@
 
 .heading {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #26272b;
     box-shadow: 0 0 12px #18191b;
@@ -21,7 +21,7 @@
 
 .coin-row {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #26272b;
     box-shadow: 0 0 12px #18191b;
